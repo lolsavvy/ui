@@ -299,7 +299,7 @@ if not isfile("Patrick.Pub") then
          local ping = string.format('%.0f', game.Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
          local uid = "1"
          local fpsValue = string.split(game.Stats.Workspace.Heartbeat:GetValueString(), ".")[1]
-         WaterMarkLabel.Text = 'Patrick.<font color="rgb(255,255,0)">Pub</font> - uid: <font color="rgb(255,255,0)">' .. uid .. '</font> / fps: <font color="rgb(255,255,0)">' .. fpsValue .. '</font> / ping: <font color="rgb(255,255,0)">' .. ping .. '</font> / time: <font color="rgb(255,255,0)">' .. time .. '</font>'
+         WaterMarkLabel.Text = 'Patrick.<font color="rgb(74, 74, 74)">Pub</font> - uid: <font color="rgb(74, 74, 74)">' .. uid .. '</font> / fps: <font color="rgb(255,255,0)">' .. fpsValue .. '</font> / ping: <font color="rgb(255,255,0)">' .. ping .. '</font> / time: <font color="rgb(255,255,0)">' .. time .. '</font>'
        end
     end)
     return Watermark
