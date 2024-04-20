@@ -384,6 +384,24 @@ TextLabel.Text = "Patrick.Pub"
 TextLabel.TextColor3 = Color3.fromRGB(221, 255, 0)
 TextLabel.TextSize = 9
 
+
+
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+TextLabel.Parent = menu.bg.Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.952243149, 0, 0.195753098, 0)
+TextLabel.Size = UDim2.new(0, 46, 0, 13)
+TextLabel.FontFace = Fonts.ProggyTiny
+TextLabel.Text = "V1"
+TextLabel.TextColor3 = Color3.fromRGB(221, 255, 0)
+TextLabel.TextSize = 9
+
     for _, obj in pairs(menu:GetDescendants()) do
         if obj.Name:lower():find('name_esp') then
            obj.Text = '<font color="rgb(255,255,0)">' .. game.Players.LocalPlayer.Name .. '</font>'
