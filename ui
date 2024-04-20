@@ -365,59 +365,6 @@ if not isfile("Patrick.Pub") then
     CloneScreenGui.Parent = CloneCore
     CloneScreenGui.Name = "Patrick_gui"
 
-    local menu_text_label = Instance.new("TextLabel", menu.bg)
-    menu_text_label.Name = "pre"
-    menu_text_label.RichText = true
-    menu_text_label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    menu_text_label.BackgroundTransparency = 1.000
-    menu_text_label.Position = UDim2.new(0, 4, 0, -43)
-    menu_text_label.Size = UDim2.new(0, 802, 0, 24)
-    menu_text_label.FontFace = Fonts.ProggyTiny
-    menu_text_label.Text = library.Title
-    menu_text_label.TextColor3 = Color3.fromRGB(74, 74, 74)
-    menu_text_label.TextSize = 9
-    menu_text_label.TextStrokeTransparency = 0.000
-
-    local BottomBar = Instance.new("Frame", menu.bg)
-    local BuildLabel = Instance.new("TextLabel", BottomBar)
-    local ActiveUserLabel = Instance.new("TextLabel", BottomBar)
- 
-    BottomBar.Name = "BottomBar"
-    BottomBar.BackgroundColor3 = Color3.fromRGB(11, 11, 11)
-    BottomBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    BottomBar.BorderSizePixel = 0
-    BottomBar.Position = UDim2.new(0.00487692887, 1, 0.973760962, -25)
-    BottomBar.Size = UDim2.new(1.02570701, -2, -0.00615911139, 24)
- 
-    BuildLabel.Name = "BuildLabel"
-    BuildLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    BuildLabel.BackgroundTransparency = 1.000
-    BuildLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    BuildLabel.BorderSizePixel = 0
-    BuildLabel.Position = UDim2.new(0.0005, 1, 0, -10)
-    BuildLabel.Size = UDim2.new(-0.00151476054, 200, 2.14484048, -1)
-    BuildLabel.FontFace = Fonts.ProggyTiny
-    BuildLabel.RichText = true
-    BuildLabel.Text = "build: <font color=\"rgb(255,255,0)\">public</font>"
-    BuildLabel.TextColor3 = Color3.fromRGB(74, 74, 74)
-    BuildLabel.TextSize = 9
-    BuildLabel.TextWrapped = true
-    BuildLabel.TextXAlignment = Enum.TextXAlignment.Left
- 
-    ActiveUserLabel.Name = "ActiveUserLabel"
-    ActiveUserLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    ActiveUserLabel.BackgroundTransparency = 1.000
-    ActiveUserLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    ActiveUserLabel.BorderSizePixel = 0
-    ActiveUserLabel.Position = UDim2.new(1.0055, -204, -1.46925938, 1)
-    ActiveUserLabel.Size = UDim2.new(0.00125635799, 200, 4.04341888, -1)
-    ActiveUserLabel.FontFace = Fonts.ProggyTiny
-    ActiveUserLabel.RichText = true
-    ActiveUserLabel.Text = "active user: <font color=\"rgb(255,255,0)\">7d</font>"
-    ActiveUserLabel.TextColor3 = Color3.fromRGB(74, 74, 74)
-    ActiveUserLabel.TextSize = 9
-    ActiveUserLabel.TextXAlignment = Enum.TextXAlignment.Right
- 
     for _, obj in pairs(menu:GetDescendants()) do
         if obj.Name:lower():find('name_esp') then
            obj.Text = '<font color="rgb(255,255,0)">' .. game.Players.LocalPlayer.Name .. '</font>'
